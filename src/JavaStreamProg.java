@@ -1,9 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -27,7 +24,7 @@ public class JavaStreamProg {
 		al.add("Azhar");
 
 		long c = al.stream().filter(s -> s.startsWith("A")).count();
-		System.out.println();
+		System.out.println(c);
 
 		Stream.of("Minni", "Tiddu", "Gingu", "oreo").filter(s -> s.length() > 4).map(s -> s.toUpperCase())
 				.forEach(s -> System.out.println(s));
