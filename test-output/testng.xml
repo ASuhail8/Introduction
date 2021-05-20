@@ -7,16 +7,10 @@
 	<parameter name = "username" value = "abc.com"/>
 		<classes>
 			<class name="frameworkPracticeTestNG.Class1" />
-			<class name="frameworkPracticeTestNG.Class2">
-			<methods>
-			<exclude name="closeDb"/>
-			</methods>
-			</class>
-			
+			<class name="frameworkPracticeTestNG.Class2" />
 		</classes>
 	</test> <!-- Test -->
 	<test name="login">
-	<parameter name="key" value="value" />
 		<classes>
 			<class name="frameworkPracticeTestNG.Class3" />
 		</classes>
